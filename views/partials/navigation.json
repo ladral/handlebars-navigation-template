@@ -1,0 +1,12 @@
+{
+    "items" : [
+        {
+            "navTitle" : "home",
+            "navLink" : "/"
+        },
+        {
+            "navTitle" : "users",
+            "navLink" : "/users"
+        }
+    ]
+}
