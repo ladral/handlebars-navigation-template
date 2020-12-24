@@ -5,27 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <title>{{title}}</title>
-    <script>
-        const switchNavMenuItem = (menuItems) => {
+    <script src="/javascripts/navigation.js"></script>
 
-            const current = location.pathname
-
-            menuItems.forEach(menuItem => {
-                const href = menuItem.getAttribute('href')
-                if ((current.includes(href) && href !== "/") || ( href === "/" && current === "/")){
-                    menuItem.className = "active";
-                }else {
-                    menuItem.className = "inactive";
-                }
-            })
-
-        }
-
-        document.addEventListener("DOMContentLoaded", function() {
-            switchNavMenuItem(document.querySelectorAll('.navigation a'))
-        });
-
-    </script>
 </head>
 <body>
 {{{body}}}
