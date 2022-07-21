@@ -7,14 +7,15 @@ const logger = require('morgan');
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 
-const hbs = require('express-handlebars');
+const handlebars = require('express-handlebars');
 
 const app = express();
 
 // view engine setup
-app.engine('hbs', hbs({extname: 'hbs', defaultLayout: 'layout'}))
-app.set('views', path.join(__dirname, 'views'));
+
+app.engine('hbs', handlebars.engine({extname: 'hbs', defaultLayout: 'layout'}));
 app.set('view engine', 'hbs');
+app.set('views', path.join(__dirname, 'views'));
 
 app.use(logger('dev'));
 app.use(express.json());
