@@ -29,7 +29,7 @@ Add a new link to the navigation bar just by adding a new item to the navigation
 
 Each item needs two properties:
 - navTitle: will be used as name of the navigation item on the web page
-- navLink: defines the link ot the navigation item
+- navLink: defines the link of the navigation item
 
 All defined items will automatically be generated on the navigation bar of the webpage.
 
